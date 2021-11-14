@@ -1,0 +1,9 @@
+<p style="text-align: left">
+
+  <%= comment.commenter %> By ~~~~~~<span style="color: hotpink"><%= comment.body %></span>
+</p>
+<p style="text-align: right">
+  <%= link_to 'Destroy Comment', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>

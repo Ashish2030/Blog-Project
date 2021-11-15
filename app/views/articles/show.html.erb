@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+
   <style>
 
       .ashu input[type="submit"]:hover{
@@ -277,50 +273,6 @@
   </main>
 </section>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-    function fun() {
-        var x = document.getElementById("dis");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-
-    $('#image').focusin(function(){
-        $('form').addClass('up')
-    });
-    $('#Description').focusin(function(){
-        $('form').addClass('up')
-    });
-    $('#image').focusout(function(){
-        $('form').removeClass('up')
-    });
-    $('#Description').focusout(function(){
-        $('form').removeClass('up')
-    });
-
-    // Panda Eye move
-    $( document ).on( "mousemove", function( event ) {
-        var x = event.pageX/50;
-        var y = event.pageY/25;
-        $('.eye-ball').css({
-            width : x,
-            height : y
-        });
-    });
-
-    // validation
-
-
-    $('.btn').click(function(){
-        $('form').addClass('wrong-entry');
-        setTimeout(function(){
-            $('form').removeClass('wrong-entry');
-        },3000 );
-    });
-</script>
 
 </html>
 
